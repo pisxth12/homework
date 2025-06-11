@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homework.css">
+</head>
+<body>
+     <header>
+        <h1>Java List Documenttaion</h1>
+        <p>A comprehenssive guide to the<strong>List</strong> interface in java.</p>
+     </header>
+
+     <main>
+        <div class="column1">
+        <h3>Introdution</h3>
+        <a href=""></a>
+        <p>In Java, a <strong>List</strong> is an interface in the java.util package that represents an ordered collection of elements. It allows duplicate elements and provides index-based access to its elements. Lists maintain the insertion order and are widely used in Java applications.</p>
+         </div>
+
+         <div class="column2">
+        <h3>Key Characteristics</h3>
+          <ul>
+            <li><strong>Ordered Collection:</strong> Elements are stored in a specific</li>
+            
+            <li><strong> Index-Based Access:</strong> Retrieve or modify elements using their index.</li>
+            <li><strong>Allows Duplicates:</strong>A list can contain multiple occurrences of the same element. </li>
+            <li><strong>Resizable:</strong>Dynamically grows or shrinks as elements are added or removed. </li>
+            <li><strong>Iterable:</strong>Supports iteration using loops or iterators.</li>
+        </ul>
+        </div>
+        <section class="table">
+            <h2>Common Implementations</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Implementation</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code>ArrayList</code>
+                        </td>
+                        <td>Backed by a dynamic array; provides fast random access.</td>
+                    </tr>
+                    <tr>
+                        <td><code>LinkedList</code></td>
+                        <td>Implemented as a doubly-linked list; efficient for frequent insertions and deletions.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>Vector</code>
+                        </td>
+                        <td>
+                            Thread-safe implementation similar to <code>ArrayList</code>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td><code>Stack</code></td>
+                        <td>LIFO (Last-In-First-Out) stack implemented as a subclass of  <code>Victor</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="methods">
+            <h2>Common Methods</h2>
+            <div class="methood_list">
+                <div class="method">
+                    <code>add(E element)</code>
+                    <p>Adds an element to the end of the list.</p>
+                </div>
+                <div class="method">
+                    <code>get(int index)</code>
+                    <p>Returns the element at the specified index.</p>
+                </div>
+                <div class="method">
+                    <code>remove(int index)</code>
+                    <p>Removes the element at the specified index.</p>
+                </div>
+                <div class="method">
+                    <code>set(int index, E element)</code>
+                    <p>Replaces the element at the specified index with the given e</p>
+                </div>
+                <div class="method">
+                    <code>size()</code>
+                    <p>Returns the number of elements in the list.</p>
+                </div>
+            </div>
+            
+
+        </section>
+        <section class="code">
+            <h2>Example Code</h2>
+            <div class="codes">
+           <pre>
+                 import java.util.ArrayList;
+                    import java.util.List;
+                    
+                    public class ListExample {
+                        public static void main(String[] args) {
+                            // Create a List using ArrayList
+                            List fruits = new ArrayList<>();
+                    
+                            // Add elements to the list
+                            fruits.add("Apple");
+                            fruits.add("Banana");
+                    
+                            // Access elements by index
+                            System.out.println("Element at index 0: " + fruits.get(0));
+                    
+                            // Modify an element
+                            fruits.set(1, "Grape");
+                    
+                            // Print the list
+                            System.out.println("Updated list: " + fruits);
+                        }
+                    }
+                </pre>     
+            </div>
+        </section>
+     </main>
+     <footer>
+        <span>© 2023 Java Documentation. All rights reserved.</span>
+     </footer>
+
+</body>
+</html>
